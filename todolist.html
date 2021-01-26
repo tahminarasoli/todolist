@@ -7,15 +7,35 @@
 </head>
 <body>
     <script>
-        var todos = ['Item 1', 'Item 2', 'Item 3'];
-        // display a todo
-        console.log(todos);
-        // add a todo
-        todos.push('Item 4');
-        // edit a todo
-        todos[0] = 'Item 1 updated';
-        // remove a todo
-        todos.splice(0, 1);
+        // first version
+         var todos = ['Item 1', 'Item 2', 'Item 3'];
+        // // display a todo
+         console.log(todos);
+        // // add a todo
+        // todos.push('Item 4');
+        // // edit a todo
+        // todos[0] = 'Item 1 updated';
+        // // remove a todo
+        // todos.splice(0, 1);
+
+        // second version
+        // add todos
+        function add(todo){
+            todos.push(todo);
+            console.log(todos);
+        }
+        // edit todos
+        function edit(position, vewValue){
+            todos[position] = newValue;
+            console.log(todos);
+        }
+        // remove todos
+        function remove(position){
+            todos.splice(position, 1);
+            console.log(todos);
+
+        }
+
 
 
     </script>
